@@ -1,0 +1,1 @@
+{"name": "compare-new", "on": {"push": {"branches": ["case-*"], "paths": ["new/**"]}, "pull_request": {"paths": ["new/**"]}}, "permissions": {}, "jobs": {"observe": {"runs-on": "ubuntu-latest", "timeout-minutes": 2, "steps": [{"run": "printf \"EVENT=%s SHA=%s REF=%s\\n\" \"$GITHUB_EVENT_NAME\" \"$GITHUB_SHA\" \"$GITHUB_REF\""}]}}}
